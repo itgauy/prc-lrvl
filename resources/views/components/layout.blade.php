@@ -26,7 +26,7 @@
           <div x-show="open" @click.outside="open=false"
             class="bg-white shadow-lg absolute top-10 right-0 rounded-lg overflow-hidden font-light">
 
-            <p class="block pl-4 pr-8 py-2 mb-1">{{ auth()->user()->username }}</p>
+            <p class="username">{{ auth()->user()->username }}</p>
 
             <a href="{{ route('dashboard') }}" class="block hover:bg-slate-100 pl-4 pr-8 py-2 mb-1">Dashboard</a>
 
